@@ -1,0 +1,23 @@
+#!/bin/bash
+# Zabberus by Robert Socha
+# version: 1.0
+_zabberus_modules="/usr/local/lib/zabberus /usr/lib/zabberus"
+if [[ $1 == "hello" ]]
+then
+    for _mod in $(find ${_zabberus_modules} -maxdepth 1 -mindepth 1 -type f -executable 2>/dev/null)
+    do
+        basename "${_mod}"
+    done | sort | uniq | paste -s -d ' '
+else
+    _cmd=$1
+    shift   
+    for _path in ${_zabberus_modules}
+    do
+        if [[ -x ${_path}/${_cmd} ]]
+        then
+            "${_path}/${_cmd}" "$@"
+            exit $?
+        fi
+    done
+    exit 255
+fi

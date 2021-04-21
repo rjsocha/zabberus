@@ -1,0 +1,8 @@
+Package: zabberus
+Version: 1.0-1
+Section: admin
+Priority: optional
+Architecture: all
+Depends: zabbix-agent
+Maintainer: Robert Socha <socha@socha.it
+Description: zabberus 
