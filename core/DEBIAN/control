@@ -5,4 +5,5 @@ Priority: optional
 Architecture: all
 Depends: zabbix-agent
 Maintainer: Robert Socha <socha@socha.it
+Homepage: https://github.com/rjsocha/zabberus
 Description: zabberus 
