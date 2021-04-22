@@ -1,5 +1,6 @@
 #!/bin/bash
 # Zabberus by Robert Socha
+# BSD
 # version: 1.0
 _zabberus_modules="/usr/local/lib/zabberus /usr/lib/zabberus"
 if [[ $1 == "hello" ]]
