@@ -10,5 +10,5 @@ apt-get install /tmp/zabberus_1.0-3_all.deb
 
 test:
 ```
-zabbix-agentd -t zabberus[hello]
+zabbix_agentd -t zabberus[hello]
 ```
