@@ -1,2 +1,3 @@
 #!/bin/bash
-dpkg-deb --root-owner-group -b core .
+dpkg-deb -Zgzip -b core  deb
+dpkg-deb -Zgzip -b modules/job-runus deb

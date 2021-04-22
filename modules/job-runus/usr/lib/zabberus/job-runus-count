@@ -1,0 +1,7 @@
+#!/bin/bash
+if [[ -x /usr/bin/job-runus ]]
+then 
+	sudo -nk /usr/bin/job-runus -r -a -l | wc -l
+else
+	echo "0"
+fi
