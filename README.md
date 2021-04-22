@@ -1,5 +1,7 @@
 # zabberus
 
+## It is completely dangerous - never do it!
+
 ```
 ( 
 cd /tmp && 
