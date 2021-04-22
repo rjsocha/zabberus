@@ -1,9 +1,9 @@
 Package: zabberus-job-runus
-Version: 1.0
+Version: 1.0-1
 Section: admin
 Priority: optional
 Architecture: all
-Depends: zabbix, sudo
+Depends: zabberus, sudo
 Maintainer: Robert Socha <socha@socha.it
 Homepage: https://github.com/rjsocha/zabberus
 Description: zabberus module for job-runus 
