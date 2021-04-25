@@ -1,7 +1,8 @@
 #!/bin/bash
 if [[ -x /usr/bin/job-runus ]]
 then 
-	sudo -nk /usr/bin/job-runus -r -a -m
+	[[ -f /.zabberus-no-job-runus ]] || sudo -nk /usr/bin/job-runus -r -a -m
 else
 	echo "ERROR: missing job-runus command"
 fi
+exit 0
